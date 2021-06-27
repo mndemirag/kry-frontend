@@ -1,0 +1,110 @@
+@import "../../utils";
+
+table {
+  display: block;
+  word-wrap: break-word;
+  text-align: left;
+
+  @media (min-width: $screen-md-min) {
+    display: table;
+    width: 100%;
+  }
+
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  // Revert back to default table styling in Desktop
+  @media (min-width: $screen-md-min) {
+    tr {
+      display: table-row;
+    }
+    th,
+    td {
+      display: table-cell;
+    }
+    thead {
+      display: table-header-group;
+    }
+    tbody {
+      display: table-row-group;
+    }
+  }
+
+  thead tr {
+    @media (max-width: $screen-md-min) {
+      @include visuallyHidden;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  td {
+    /* Make it a row */
+    position: relative;
+    padding-left: 50%;
+    padding-bottom: 8px;
+
+    @media (min-width: $screen-md-min) {
+      padding: 0px;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &:before {
+      /* Table header */
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+
+    /* Label the data */
+    &:nth-of-type(1):before {
+      content: "Name";
+    }
+    &:nth-of-type(2):before {
+      content: "Status";
+    }
+    &:nth-of-type(3):before {
+      content: "Url";
+    }
+    &:nth-of-type(4):before {
+      content: "Actions";
+    }
+  }
+
+  .nameCol {
+    width: 20%;
+  }
+
+  .statusCol {
+    width: 15%;
+  }
+}
+
+.tableTitle {
+  width: 50%;
+  padding-bottom: 10px;
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}

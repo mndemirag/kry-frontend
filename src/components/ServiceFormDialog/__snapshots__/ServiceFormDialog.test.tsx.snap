@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServiceFormDialog renders properly 1`] = `
+<div>
+  <div
+    class="overlay"
+  >
+    <div
+      class="popup"
+    >
+      <h2>
+        Add a new service
+      </h2>
+      <span
+        aria-label="Close the form"
+        class="close"
+      >
+        ×
+      </span>
+      <div
+        class="content"
+      >
+        <form
+          class="serviceForm"
+        >
+          <label
+            class="inputLabel"
+          >
+            Name
+            <input
+              aria-label="Name"
+              class="inputField"
+              type="text"
+            />
+          </label>
+          <label
+            class="inputLabel"
+          >
+            URL
+            <input
+              aria-label="URL"
+              class="inputField"
+              type="text"
+            />
+          </label>
+          <div
+            class="buttonContainer"
+          >
+            <button
+              aria-label="Close"
+              class="button"
+            >
+              Close
+            </button>
+            <button
+              aria-label="Submit"
+              class="button"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

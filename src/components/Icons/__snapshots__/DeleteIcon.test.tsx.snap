@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeleteIcon renders properly 1`] = `
+<div>
+  <div
+    id="deleteIcon"
+  >
+    <svg
+      aria-hidden="true"
+      height="24px"
+      viewBox="0 0 48 48"
+      width="24px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        fill="#f55376"
+        points="12.229,42.048 5.952,35.77 35.771,5.952 42.048,12.23 12.229,42.048"
+      />
+      <path
+        d="M30.278,24L24,30.278l11.771,11.77l6.277-6.278L30.278,24 M12.229,5.952L5.952,12.23L17.722,24 L24,17.722L12.229,5.952"
+        fill="#f55376"
+      />
+      <polyline
+        fill="#eb0000"
+        points="24,17.722 17.722,24 24,30.278 30.278,24 24,17.722"
+      />
+    </svg>
+    <span
+      class="visuallyHidden"
+    >
+      Delete the service
+    </span>
+  </div>
+</div>
+`;

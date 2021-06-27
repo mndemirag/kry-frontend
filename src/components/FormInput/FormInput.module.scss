@@ -1,0 +1,23 @@
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgb(110, 118, 123);
+  margin-bottom: 20px;
+}
+
+.inputField {
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0px;
+  border-radius: 0px;
+  border-style: none none solid;
+  border-bottom-width: 2px;
+  border-bottom-color: rgb(206, 208, 210);
+  outline: none;
+
+  &:focus-visible {
+    border-bottom-color: rgb(10, 126, 133);
+  }
+}

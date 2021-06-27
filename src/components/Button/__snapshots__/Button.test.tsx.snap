@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders properly 1`] = `
+<div>
+  <button
+    aria-label=" Button "
+    class="button"
+  >
+     Button 
+  </button>
+</div>
+`;

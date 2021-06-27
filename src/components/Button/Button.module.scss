@@ -1,0 +1,17 @@
+@import "../../utils";
+
+.button {
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 42px;
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: none;
+  min-width: 110px;
+  border-radius: 7px;
+  line-height: 13px;
+  color: white;
+  background-color: $kry-blue;
+  border: none;
+  margin: 10px;
+}

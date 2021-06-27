@@ -1,0 +1,61 @@
+@import "../../utils";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+
+  @media (min-width: $screen-md-min) {
+    width: 50%;
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+
+    :hover {
+      color: #06d85f;
+    }
+  }
+
+  .content {
+    max-height: 30%;
+  }
+}
+
+.serviceForm {
+  padding: 0px;
+
+  @media (min-width: $screen-md-min) {
+    padding: 30px 30px 12px;
+  }
+}
+
+.buttonContainer {
+  padding-top: 32px;
+  text-align: center;
+}
